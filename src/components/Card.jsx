@@ -112,15 +112,22 @@ function Card() {
 <div class="card" >
   <div className="image">
   <img src={item.image} class="card-img" alt="..."/>
+ 
   <div className="inner">
-  <img src={item["image1"]} alt="" />
+  <Link to={`/Products/${item.id}`}> <img src={item["image1"]} alt="" />
+  </Link>
   </div>
+  
 
   <Link to="#" class="btn " onClick={()=>senddata(item)} >Add To Bag</Link>
  </div>
   <div class="card-body">
     <h5 class="card-title">{item.title}</h5>
     <p class="card-text">{item.desc}</p>
+    <div className="price">
+      <div className="newprice">Rs{item.price.newprice}</div>
+      <div className="old">Rs {item.price.oldprice}</div>
+    </div>
    
      
      

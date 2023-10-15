@@ -46,3 +46,30 @@
     color:#777;
     font-size: 15px;
 }
+@media only screen and (max-width: 1298px) {
+    .divide{
+        
+       
+        grid-template-columns:2fr 1fr;
+       
+    }
+ 
+    
+}
+
+@media only screen and (max-width: 999px) {
+    .divide{
+        
+       
+        grid-template-columns: 1fr;
+        
+       
+    }
+    .tabler{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+ 
+    
+}

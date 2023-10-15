@@ -50,6 +50,16 @@ display: none;
     background-color: black;
     color: white;
 }
+.card-body .price{
+    display: flex;
+    flex-direction: row;
+   
+    gap: 10px;
+    color: #777;
+}
+.card-body .old{
+    text-decoration: line-through;
+}
 
 @media only screen and (max-width: 918px) {
     .cards{

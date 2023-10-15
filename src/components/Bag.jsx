@@ -25,7 +25,7 @@ function Bag() {
   const tprice=()=>{
     let totalprice=0;
     carts.map((ac)=>{
-      totalprice=ac.price * ac.qnty +totalprice
+      totalprice=ac.price.newprice * ac.qnty +totalprice
     })
    
     Setprice(totalprice)
@@ -40,7 +40,7 @@ function Bag() {
     <section className="divide">
     
        
-            <div className="table-responsive">
+            <div className="tabler">
               <table className="table">
                 <thead>
                   <tr className='head-table'>
@@ -93,7 +93,7 @@ function Bag() {
   <li class="list-group-item a" >Estimate  Shipping  & tax</li>
   <li class="list-group-item b">SUBTOTAL:{price}</li>
   <li class="list-group-item b">SHIPPING DOMESTIC :100RKR</li>
-  <li class="list-group-item b text-primary fw-bold f-5">Order Total:{price}</li>
+  <li class="list-group-item b text-primary fw-bold f-5">Order Total:{price < 3000  ?  (price + 100) : price}</li>
   <li class="list-group-item"><button className='btn btn-primary'>CHECKOUT</button></li>
 </ul>
             </section>
